@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Produk - EleganMart" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/produk" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/produk" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Produk - EleganMart</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">E</div>
+          <div>EleganMart</div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNav"><span>Menu</span></button>
+        <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+          <a class="btn-ghost" href="/">Beranda</a>
+          <a class="btn-ghost" href="/about">About</a>
+          <a class="btn-ghost" href="/produk">Produk</a>
+          <a class="btn-ghost" href="/kontak">Kontak</a>
+          <a class="btn-ghost" href="/faq">FAQ</a>
+          <a class="btn-ghost" href="/akun">Akun</a>
+          <a class="btn-ghost" href="/login">Login</a>
+          <a class="btn-ghost" href="/register">Daftar</a>
+          <a class="cart-indicator" href="/cart" aria-label="Keranjang belanja">
+            <span>Cart</span>
+            <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <div class="hero-inner">
+          <div>
+            <span class="pill">Katalog resmi</span>
+            <h2 class="hero-title">Katalog elegan dengan stok terkurasi</h2>
+            <p class="hero-desc">Setiap produk berasal dari lini resmi EleganMart, dengan harga transparan dan update rutin.</p>
+          </div>
+          <div class="hero-card">
+            <h4>Keunggulan katalog</h4>
+            <div class="hero-list">
+              <div class="hero-item">
+                <strong>Update real-time</strong>
+                <span>Harga terbaru</span>
+              </div>
+              <div class="hero-item">
+                <strong>Kategori jelas</strong>
+                <span>Filter cepat</span>
+              </div>
+              <div class="hero-item">
+                <strong>Pengiriman aman</strong>
+                <span>Packing rapi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="filters">
+            <div class="input-group">
+              <label class="label" for="categoryFilter">Kategori</label>
+              <select id="categoryFilter" aria-label="Filter kategori"></select>
+            </div>
+            <div class="input-group">
+              <label class="label" for="searchInput">Pencarian</label>
+              <input id="searchInput" class="input" type="text" placeholder="Cari produk..." aria-label="Cari produk" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-card">
+          <div class="section-head">
+            <h3 class="section-title">Daftar Produk</h3>
+            <span class="pill">Siap dikirim</span>
+          </div>
+          <div id="loadingState" class="empty-state" hidden>Memuat produk...</div>
+          <div id="errorState" class="empty-state" hidden></div>
+          <div id="emptyState" class="empty-state" hidden>Belum ada produk.</div>
+          <div class="grid" id="products"></div>
+        </div>
+      </section>
+    </main>
+    <footer>(c) EleganMart</footer>
+    <script src="/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Register Customer - EleganMart" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/register" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/register" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Register Customer - EleganMart</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">E</div>
+          <div>EleganMart</div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNav"><span>Menu</span></button>
+        <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+          <a class="btn-ghost" href="/">Beranda</a>
+          <a class="btn-ghost" href="/about">About</a>
+          <a class="btn-ghost" href="/produk">Produk</a>
+          <a class="btn-ghost" href="/kontak">Kontak</a>
+          <a class="btn-ghost" href="/faq">FAQ</a>
+          <a class="btn-ghost" href="/akun">Akun</a>
+          <a class="btn-ghost" href="/login">Login</a>
+          <a class="cart-indicator" href="/cart" aria-label="Keranjang belanja">
+            <span>Cart</span>
+            <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section auth-wrap">
+        <div class="section-card auth-card">
+          <div class="section-head">
+            <h3 class="section-title">Register Customer</h3>
+            <span class="pill">Buat akun baru</span>
+          </div>
+          <form class="auth-form" id="registerForm">
+            <div class="input-group">
+              <label class="label" for="registerName">Nama Lengkap</label>
+              <input id="registerName" type="text" name="name" placeholder="Nama lengkap" required />
+            </div>
+            <div class="input-group">
+              <label class="label" for="registerEmail">Email</label>
+              <input id="registerEmail" type="email" name="email" placeholder="nama@email.com" required />
+            </div>
+            <div class="input-group">
+              <label class="label" for="registerPhone">No. Telepon</label>
+              <input id="registerPhone" type="tel" name="phone" placeholder="08123456789" required />
+            </div>
+            <div class="input-group">
+              <label class="label" for="registerPassword">Password</label>
+              <input id="registerPassword" type="password" name="password" placeholder="Minimal 8 karakter" required />
+            </div>
+            <div class="input-group">
+              <label class="label" for="registerConfirm">Konfirmasi Password</label>
+              <input id="registerConfirm" type="password" name="confirmPassword" placeholder="Ulangi password" required />
+            </div>
+            <button class="btn" type="submit">Daftar</button>
+            <div id="registerError" class="product-desc" role="alert" aria-live="polite"></div>
+            <div class="auth-links">
+              <a class="btn-ghost" href="/login">Sudah punya akun? Login</a>
+              <a class="btn-ghost" href="/produk">Lihat produk tanpa login</a>
+              <a class="btn-ghost" href="/">Kembali ke beranda</a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>(c) EleganMart</footer>
+    <script src="/register.js"></script>
+  </body>
+</html>

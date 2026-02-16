@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Order Sukses - EleganMart" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/order-sukses" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/order-sukses" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Order Sukses - EleganMart</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">E</div>
+          <div>EleganMart</div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNav"><span>Menu</span></button>
+        <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+          <a class="btn-ghost" href="/">Beranda</a>
+          <a class="btn-ghost" href="/about">About</a>
+          <a class="btn-ghost" href="/produk">Produk</a>
+          <a class="btn-ghost" href="/kontak">Kontak</a>
+          <a class="btn-ghost" href="/faq">FAQ</a>
+          <a class="btn-ghost" href="/akun">Akun</a>
+          <a class="btn-ghost" href="/login">Login</a>
+          <a class="btn-ghost" href="/register">Daftar</a>
+          <a class="cart-indicator" href="/cart" aria-label="Keranjang belanja">
+            <span>Cart</span>
+            <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-card success-card">
+          <div class="success-icon">OK</div>
+          <h2 class="success-title">Pesanan berhasil dibuat</h2>
+          <p class="hero-desc">Terima kasih, pesanan Anda sedang diproses.</p>
+          <div class="success-meta">
+            <div class="label">Nomor order</div>
+            <div id="orderId" class="success-id">-</div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn" href="/pesanan">Lihat riwayat pesanan</a>
+            <a class="btn-outline" href="/produk">Belanja lagi</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>(c) EleganMart</footer>
+    <script src="/app.js"></script>
+    <script src="/order-sukses.js"></script>
+  </body>
+</html>

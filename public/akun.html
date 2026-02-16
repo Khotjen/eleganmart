@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Akun - EleganMart" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/akun" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/akun" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Akun - EleganMart</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">E</div>
+          <div>EleganMart</div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNav"><span>Menu</span></button>
+        <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+          <a class="btn-ghost" href="/">Beranda</a>
+          <a class="btn-ghost" href="/about">About</a>
+          <a class="btn-ghost" href="/produk">Produk</a>
+          <a class="btn-ghost" href="/kontak">Kontak</a>
+          <a class="btn-ghost" href="/faq">FAQ</a>
+          <a class="btn-ghost" href="/akun">Akun</a>
+          <a class="btn-ghost" href="/login">Login</a>
+          <a class="btn-ghost" href="/register">Daftar</a>
+          <a class="cart-indicator" href="/cart" aria-label="Keranjang belanja">
+            <span>Cart</span>
+            <span id="cartCount" class="cart-count" aria-live="polite">0</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-card account-layout">
+          <div class="profile-card">
+            <div class="profile-avatar">C</div>
+            <div class="profile-name">Customer Elegan</div>
+            <div class="product-desc">customer@eleganmart.com</div>
+            <div class="hero-actions">
+              <a class="btn-outline" href="/pesanan">Riwayat pesanan</a>
+              <a class="btn-ghost" href="/lupa-password">Ubah password</a>
+              <button class="btn-ghost" id="logoutBtn">Logout</button>
+            </div>
+          </div>
+          <div class="section-card">
+            <div class="section-head">
+              <h3 class="section-title">Data pelanggan</h3>
+              <span class="pill">Profil</span>
+            </div>
+            <div id="akunError" class="product-desc" role="alert" aria-live="polite"></div>
+            <div class="form-grid">
+              <div class="input-group">
+                <label class="label" for="akunName">Nama lengkap</label>
+                <input id="akunName" type="text" name="name" readonly />
+              </div>
+              <div class="input-group">
+                <label class="label" for="akunEmail">Email</label>
+                <input id="akunEmail" type="email" name="email" readonly />
+              </div>
+              <div class="input-group">
+                <label class="label" for="akunPhone">Nomor HP</label>
+                <input id="akunPhone" type="text" name="phone" readonly />
+              </div>
+              <div class="input-group" style="grid-column:1/-1">
+                <label class="label" for="akunAddress">Alamat</label>
+                <input id="akunAddress" type="text" value="Jl. Harmoni No. 10, Jakarta" />
+              </div>
+              <button class="btn">Simpan perubahan</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>(c) EleganMart</footer>
+    <script src="/akun.js"></script>
+  </body>
+</html>

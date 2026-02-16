@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Login Admin - EleganMart" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/admin-login" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/admin-login" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Login Admin - EleganMart</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">A</div>
+          <div>Admin EleganMart</div>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-card auth-wrap">
+          <div class="section-card auth-card">
+            <div class="section-head">
+              <h3 class="section-title">Login Admin</h3>
+              <span class="pill">Akses terbatas</span>
+            </div>
+            <form id="adminLoginForm" class="auth-form">
+              <div class="input-group">
+                <label class="label" for="adminEmail">Email</label>
+                <input id="adminEmail" name="email" type="email" required />
+              </div>
+              <div class="input-group">
+                <label class="label" for="adminPassword">Password</label>
+                <input id="adminPassword" name="password" type="password" required />
+              </div>
+              <button type="submit">Masuk</button>
+              <div id="adminLoginError" class="product-desc" role="alert" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>(c) Admin EleganMart</footer>
+    <script src="/admin-login.js"></script>
+  </body>
+</html>

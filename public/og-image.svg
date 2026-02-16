@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="EleganMart">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#fff7ed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <rect x="80" y="80" width="1040" height="470" rx="36" fill="#ffffff" stroke="#e5e7eb"/>
+  <rect x="120" y="120" width="110" height="110" rx="24" fill="#4f46e5"/>
+  <path d="M150 150h60v14h-44v14h36v14h-36v14h44v14h-60z" fill="#ffffff"/>
+  <text x="260" y="190" font-family="Arial, sans-serif" font-size="56" fill="#0f172a">EleganMart</text>
+  <text x="260" y="255" font-family="Arial, sans-serif" font-size="28" fill="#475569">Produk original, harga transparan, layanan cepat.</text>
+</svg>

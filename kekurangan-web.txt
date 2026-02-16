@@ -1,0 +1,17 @@
+DAFTAR KEKURANGAN WEB (ELEGANMART) - STATUS
+
+1. [DONE] Admin diproteksi: halaman /admin dan API produk/kategori tidak bisa diakses tanpa admin.
+2. [DONE] Secrets tidak hardcoded: session secret dan Midtrans server/client key sudah via env.
+3. [PARTIAL] Validasi input: sudah ada validasi email, harga negatif, panjang teks, stok, dll. Belum merata semua field/endpoint.
+4. [DONE] Upload file ada filter: batasan MIME/ukuran (gambar saja, max 2MB).
+5. [DONE] Proteksi CSRF / rate limiting untuk login/register/admin sudah ada.
+6. [DONE] Penyimpanan JSON pakai locking sederhana (dbLock) untuk hindari race.
+7. [DONE] Encoding dirapikan ke ASCII agar tidak muncul karakter rusak.
+8. [DONE] Navigasi mobile: tombol hamburger + script toggle ditambahkan.
+9. [DONE] Aksesibilitas: label form ditautkan dan aria-label ditambahkan di elemen penting.
+10. [DONE] State loading/error ditambahkan di halaman yang melakukan fetch data.
+11. [DONE] Keranjang sinkron lewat server (API cart) bila user login.
+12. [DONE] Validasi stok/harga saat checkout sudah dicek di server.
+13. [DONE] SEO ditambahkan: meta description, OG tags, favicon, canonical.
+14. [DONE] Lazy-load ditambahkan ke gambar produk.
+15. [DONE] Copywriting diperkuat agar lebih spesifik ke brand.

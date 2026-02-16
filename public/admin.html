@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:site_name" content="EleganMart" />
+    <meta property="og:title" content="Panel Admin - E-Commerce" />
+    <meta property="og:description" content="EleganMart adalah brand resmi dengan produk original, harga transparan, dan layanan cepat." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://eleganmart.local/admin" />
+    <meta property="og:image" content="https://eleganmart.local/og-image.svg" />
+    <link rel="canonical" href="https://eleganmart.local/admin" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<title>Panel Admin - E-Commerce</title>
+    <link rel="stylesheet" href="/style.css" />
+      <script src="/nav.js" defer></script>
+      <script src="/api.js" defer></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand">
+          <div class="brand-badge">A</div>
+          <div>Admin EleganMart</div>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="siteNav"><span>Menu</span></button>
+        <nav class="nav" id="siteNav" aria-label="Navigasi utama">
+          <button id="btnAdminLogout" class="btn-ghost">Logout</button>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <section class="section">
+        <div class="section-card admin-layout">
+          <div class="admin-stack">
+            <div class="section-card">
+              <div class="section-head">
+                <h3 class="section-title">Ringkasan</h3>
+                <span class="pill">Panel kontrol</span>
+              </div>
+              <div class="admin-metrics">
+                <div class="metric">
+                  <div id="adminStatsProducts" class="metric-value">0</div>
+                  <div class="metric-label">Produk</div>
+                </div>
+                <div class="metric">
+                  <div id="adminStatsCategories" class="metric-value">0</div>
+                  <div class="metric-label">Kategori</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-card">
+              <h3 class="section-title" style="margin-bottom:12px">Tambah Kategori</h3>
+              <div class="controls">
+                <input id="catName" type="text" placeholder="Nama kategori" aria-label="Nama kategori" />
+                <button id="btnAddCat">Tambah</button>
+              </div>
+              <div id="catList" class="product-desc"></div>
+            </div>
+
+            <div class="section-card">
+              <h3 class="section-title" style="margin-bottom:12px">Unggah Produk</h3>
+              <form id="productForm">
+                <div class="controls">
+                  <input name="title" type="text" placeholder="Judul" required aria-label="Judul produk" />
+                  <input name="description" type="text" placeholder="Deskripsi" aria-label="Deskripsi produk" />
+                  <input name="price" type="number" placeholder="Harga" required aria-label="Harga produk" />
+                  <select name="categoryId" id="productCat" aria-label="Kategori produk"></select>
+                  <input name="image" type="file" accept="image/*" aria-label="Gambar produk" />
+                  <button type="submit">Unggah</button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="section-card">
+            <div class="section-head">
+              <h3 class="section-title">Daftar Produk</h3>
+              <span class="pill">Kelola harga</span>
+            </div>
+            <div id="adminLoading" class="empty-state" hidden>Memuat data admin...</div>
+            <div id="adminError" class="empty-state" hidden></div>
+            <div id="adminProducts" class="grid"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>(c) Panel Admin EleganMart</footer>
+    <script src="/admin.js"></script>
+  </body>
+</html>
