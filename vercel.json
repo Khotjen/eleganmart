@@ -11,12 +11,5 @@
       "src": "/(.*)",
       "dest": "/server.js"
     }
-  ],
-  "env": {
-    "SESSION_SECRET": "@session-secret",
-    "MIDTRANS_SERVER_KEY": "@midtrans-server-key",
-    "MIDTRANS_CLIENT_KEY": "@midtrans-client-key",
-    "ADMIN_EMAIL": "@admin-email",
-    "ADMIN_PASSWORD": "@admin-password"
-  }
+  ]
 }
